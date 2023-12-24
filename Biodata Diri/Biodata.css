@@ -1,0 +1,229 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(
+    circle,
+    rgba(247, 0, 254, 1) 0%,
+    rgba(0, 245, 255, 1) 100%
+  );
+}
+
+header {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 245, 255, 1) 0%,
+    rgba(247, 0, 254, 1) 100%
+  );
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: black;
+  font-size: 36px;
+  padding: 10px 15px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 245, 255, 1) 0%,
+    rgba(231, 0, 255, 1) 50%,
+    rgba(0, 245, 255, 1) 100%
+  );
+  border-radius: 20pt;
+  display: inline-block;
+}
+
+h3 {
+  background: linear-gradient(
+    90deg,
+    rgba(231, 0, 255, 1) 0%,
+    rgba(0, 245, 255, 1) 50%,
+    rgba(231, 0, 255, 1) 100%
+  );
+  padding: 10px 15px;
+  border-radius: 20pt;
+  display: inline-block;
+}
+
+img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 80%;
+  border: 2px solid blueviolet;
+}
+
+th,
+td {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 245, 255, 1) 0%,
+    rgba(247, 0, 254, 1) 100%
+  );
+  border: 2px solid blueviolet;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: blueviolet;
+  color: white;
+}
+
+footer img {
+  margin: 10px;
+  border-radius: 10px;
+}
+
+footer {
+  background: linear-gradient(
+    0deg,
+    rgba(247, 0, 254, 1) 0%,
+    rgba(0, 245, 255, 1) 100%
+  );
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #d2691e;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+marquee {
+  background: linear-gradient(
+    90deg,
+    rgba(231, 0, 255, 1) 0%,
+    rgba(0, 245, 255, 1) 50%,
+    rgba(231, 0, 255, 1) 100%
+  );
+  color: black;
+  padding: 10px;
+  border-radius: 10pt;
+}
+
+.induk h2 {
+  text-align: center;
+}
+
+.induk div {
+  width: 500px;
+  height: 500px;
+}
+
+.kotak1:hover,
+.kotak2:hover,
+.kotak3:hover,
+.kotak4:hover {
+  transform: scale(1.05);
+}
+
+.kotak1 {
+  background: linear-gradient(
+    0deg,
+    rgba(247, 0, 254, 1) 0%,
+    rgba(0, 245, 255, 1) 80%
+  );
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px black;
+  transition: 1s ease-in-out;
+}
+
+.kotak2 {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 245, 255, 1) 0%,
+    rgba(247, 0, 254, 1) 100%
+  );
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px black;
+  transition: 1s ease-in-out;
+}
+
+.kotak3 {
+  background: linear-gradient(
+    0deg,
+    rgba(247, 0, 254, 1) 0%,
+    rgba(0, 245, 255, 1) 80%
+  );
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px black;
+  transition: 1s ease-in-out;
+}
+
+.kotak4 {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 245, 255, 1) 0%,
+    rgba(247, 0, 254, 1) 100%
+  );
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px black;
+  transition: 1s ease-in-out;
+}
+
+.induk {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.container-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media all and (min-width: 480px) and (max-width: 834px) {
+  .induk {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  .induk div {
+    width: 95vw;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .induk {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  .induk div {
+    width: 90vw;
+    height: fit-content;
+  }
+}

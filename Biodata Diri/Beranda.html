@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./Beranda.css" />
+    <title>Halaman Beranda Utama</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Selamat Datang di Halaman Beranda Utama</h1>
+      <hr />
+      <h3 id="login">Silahkan Login Terlebih Dahulu Untuk Melanjutkan</h3>
+      <br />
+      <button id="loginButton">Login</button>
+      <div id="loginModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Login</h2>
+          <form>
+            <label for="username">Username:</label>
+            <input type="email" id="email" name="email" required />
+            <br />
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+            <br />
+            <button type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+
+      <br />
+    </header>
+
+    <main>
+      <hr />
+      <h2>Kontak Sosial Media Saya</h2>
+      <hr />
+
+      <div class="induk">
+        <div class="kotak1">
+          <p>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
+              alt="Logo Instagram"
+              title="Instagram"
+              width="100"
+              height="100"
+            />
+            <br />
+            <button>
+              <a href="https://www.instagram.com/cnm.adam/" target="_blank"
+                >Instagram</a
+              >
+            </button>
+          </p>
+        </div>
+
+        <div class="kotak2">
+          <p>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/800px-2021_Facebook_icon.svg.png"
+              alt="Logo Facebook"
+              title="Facebook"
+              width="100"
+              height="100"
+            />
+            <br />
+            <button>
+              <a href="https://www.facebook.com/candi.adam" target="_blank"
+                >Facebook</a
+              >
+            </button>
+          </p>
+          <br />
+        </div>
+
+        <div class="kotak3">
+          <p>
+            <img
+              src="https://play-lh.googleusercontent.com/Ui_-OW6UJI147ySDX9guWWDiCPSq1vtxoC-xG17BU2FpU0Fi6qkWwuLdpddmT9fqrA=w240-h480-rw"
+              alt="Logo Tiktok"
+              title="Tiktok"
+              width="100"
+              height="100"
+            />
+            <br />
+            <button>
+              <a href="https://www.tiktok.com/@cnm.adam" target="_blank"
+                >Tiktok</a
+              >
+            </button>
+          </p>
+          <br />
+        </div>
+
+        <div class="kotak4">
+          <p>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/124/124021.png"
+              alt="Logo Twitter"
+              title="Twitter"
+              width="100"
+              height="100"
+            />
+            <br />
+            <button>
+              <a href="https://twitter.com/AdamCnd" target="_blank">Twitter</a>
+            </button>
+          </p>
+          <br />
+        </div>
+
+        <div class="kotak5">
+          <p>
+            <img
+              src="data:image/png;base64,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"
+              alt="Logo Spotify"
+              title="Spotify"
+              width="100"
+              height="100"
+            />
+            <br />
+            <button>
+              <a
+                href="https://open.spotify.com/user/31ldwhhe52nif47l5a7qdocissay?si=21d562c231e04121"
+                target="_blank"
+                >Spotify</a
+              >
+            </button>
+          </p>
+        </div>
+
+        <div class="kotak6">
+          <p>
+            <img
+              src="https://cdn-icons-png.flaticon.com/256/25/25231.png"
+              alt="Logo GitHub"
+              title="Twitter"
+              width="100"
+              height="100"
+            />
+            <br />
+            <button>
+              <a href="https://github.com/Candimadam" target="_blank">GitHub</a>
+            </button>
+          </p>
+          <br />
+        </div>
+      </div>
+
+      <br />
+      <hr />
+      <div id="next">
+        <p>Silakan klik tombol di bawah ini untuk melihat biodata diri saya.</p>
+        <button><a href="./Biodata.html">Lihat Ke Halaman Biodata</a></button>
+      </div>
+      <hr />
+    </main>
+
+    <footer>
+      <h3>Copyright &copy; 2023 All Rights Reserved | Develop by Candimadam</h3>
+    </footer>
+    <script src="./code.jquery.com_jquery-3.7.1.js"></script>
+    <script>
+      var isLoggedIn = false;
+
+      $("#loginButton").click(function () {
+        if (!isLoggedIn) {
+          $("#loginModal").addClass("fade");
+          $("#loginModal").css("display", "block");
+        }
+      });
+
+      $(".close").click(function () {
+        $("#loginModal").removeClass("fade");
+        $("#loginModal").css("display", "none");
+      });
+
+      $("form").submit(function (e) {
+        e.preventDefault();
+        var username = $("#email").val();
+        var password = $("#password").val();
+
+        var hasNumber = /\d/.test(password);
+
+        if (hasNumber) {
+          alert("Login berhasil !");
+          $("#loginModal").removeClass("fade");
+          $("#loginModal").css("display", "none");
+
+          $("#login").hide();
+          isLoggedIn = true;
+          $("#loginButton").hide();
+          $("#next").show();
+        } else {
+          alert(
+            "Login gagal. Pastikan password mengandung setidaknya satu angka !"
+          );
+        }
+      });
+    </script>
+  </body>
+</html>
